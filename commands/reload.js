@@ -26,7 +26,7 @@ exports.run = async function(bot, msg, args) {
 };
 
 exports.conf = {
-    enabled: false,
+    activated: true,
     aliases: ['r'],
     permLevel: 4
   };
