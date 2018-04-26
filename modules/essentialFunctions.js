@@ -18,15 +18,11 @@ module.exports = (bot) => {
         }
       });
     };
-
-    bot.checkMemberRole = async function(msg, memberID, roleName) {
-      let roleBoolean = false;
-      msg.guild.fetchMember(memberID).then(function(m) {
-          if (m.roles.has(roleName.id)) roleBoolean = true;
-      });
-      return roleBoolean;
-    }
     
+    bot.checkRole = function(msg, role) {
+      if (msg.member.roles.has(role.id)) return true;
+      else return false;
+    }
     
     bot.permission = function(msg) {
       let permissionLevel = 0;
@@ -34,7 +30,7 @@ module.exports = (bot) => {
       let botOwnerID = bot.settings.owner;
       let moderatorRole = msg.guild.roles.find("name", moderatorRoleName);
       if (msg.member == null || msg.member == undefined) permissionLevel = 0;
-      if (moderatorRole && bot.checkMemberRole(msg, msg.author.id, moderatorRole)) permissionLevel = 2;
+      if (moderatorRole && bot.checkRole(msg, moderatorRole)) permissionLevel = 2;
       if (msg.member.id == botOwnerID) permissionLevel = 10;
       return permissionLevel;
     }
