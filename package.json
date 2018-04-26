@@ -1,0 +1,25 @@
+{
+  "name": "visualize",
+  "version": "1.0.0",
+  "description": "Reinvented Command Handler",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Visualize"
+  },
+  "keywords": [
+    "command",
+    "handler",
+    "discord.js",
+    "handler",
+    "commands"
+  ],
+  "author": "Charlie",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
