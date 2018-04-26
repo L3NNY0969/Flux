@@ -8,7 +8,7 @@ const settings = {
   },
   //These will be unrequired but useful.
   "config" : {
-    "specifiedHex": "Insert your hex colour here!"
+    "specifiedHex": "Insert your hex colour here! In OxOOOOOO Format."
   }
 };
 module.exports = settings;
