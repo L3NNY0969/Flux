@@ -10,3 +10,4 @@ This handler will be taking advantage of asynchronous properties and will be a g
   </p>
   <br/>
 </div>
+#The all seeing command handler formally known as Visualize
