@@ -1,9 +1,9 @@
 //You can either put your hex in your embeds module, or here, your choice.
 const settings = {
-    "prefix" : "!!",
-    "owner" : "409441396249067552",
-    "token" : "NDM5MDI5MDMwOTgxNzMwMzA0.DcNNKw.dpb8Mq59llqHChpl8G_VuaK7evI",
-    "modRole" : "Mod",
-    "hex": "0xff0000"
+    "prefix" : "Desired prefix goes here!",
+    "owner" : "Desired owner ID goes here!",
+    "token" : "Desired bot token goes here!",
+    "modRole" : "Desired mod role name!",
+    "hex": "Desired hex colour here!"
 };
 module.exports = settings;
