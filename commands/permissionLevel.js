@@ -10,6 +10,6 @@ exports.help = {
 
 exports.conf = {
   activated: true,
-  aliases: ["myperms"],
+  aliases: ["myperms", "perm"],
   permLevel: 0
   }
