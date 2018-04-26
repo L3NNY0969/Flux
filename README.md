@@ -6,7 +6,7 @@ This handler will be taking advantage of asynchronous properties and will be a g
 <div align="center">
   <br/>
   <p>
-    <img src="https://discord.js.org/static/logo.svg" width="546" alt="discord.js" />
+    <img src="https://i.pinimg.com/originals/97/8c/09/978c0970b5f6ced611ce640a712a5af0.png" width="546" alt="discord.js" />
   </p>
   <br/>
 </div>
