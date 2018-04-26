@@ -30,8 +30,8 @@ module.exports = (bot) => {
     
     bot.permission = function(msg) {
       let permissionLevel = 0;
-      let moderatorRoleName = bot.settings.important.ModRole;
-      let botOwnerID = bot.settings.important.Owner;
+      let moderatorRoleName = bot.settings.modRole;
+      let botOwnerID = bot.settings.owner;
       let moderatorRole = msg.guild.roles.find("name", moderatorRoleName);
       if (msg.member == null || msg.member == undefined) permissionLevel = 0;
       if (moderatorRole && bot.checkMemberRole(msg, msg.author.id, moderatorRole)) permissionLevel = 2;

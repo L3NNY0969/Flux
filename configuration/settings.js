@@ -1,15 +1,9 @@
+//You can either put your hex in your embeds module, or here, your choice.
 const settings = {
-  //These will be the require parts of my settings.
-  "important" : {
-    "Prefix" : "Insert your prefix here!",
-    "Owner" : "Insert your Discord ID here!",
-    "Token" : "Insert your Discord client token here!",
-    "ModRole" : "Insert your Mod role name here!"
-  },
-  //These will be unrequired but useful in some cases.
-  "config" : {
-    "Hex": "Insert your hex colour here! In OxOOOOOO Format."
-  }
+    "prefix" : "!!",
+    "owner" : "409441396249067552",
+    "token" : "NDM5MDI5MDMwOTgxNzMwMzA0.DcNNKw.dpb8Mq59llqHChpl8G_VuaK7evI",
+    "modRole" : "Mod",
+    "hex": "0xff0000"
 };
-//Exporting my settings object as a module so I can append it to my client.
 module.exports = settings;

@@ -8,10 +8,11 @@ bot.settings = require("./configuration/settings.js");
 require("./modules/eventParser.js")(bot);
 require("./modules/essentialFunctions.js")(bot);
 require("./modules/essentialEmbeds.js")(bot);
-bot.login(bot.settings.important.Token);
+bot.login(bot.settings.token);
 
 FileSystem.readdir("./commands/", function(error, commands) {
     if (error) return console.error(error.message);
+    console.log(`Going to load: ${commands.length} commands!`);
     commands.forEach(function(file) {
         if (!file.endsWith(".js")) return;
         let commandModule = require(`./commands/${file}`);
@@ -20,6 +21,5 @@ FileSystem.readdir("./commands/", function(error, commands) {
         commandModule.conf.aliases.forEach(function(alias) {
             bot.aliases.set(alias, commandModule.help.name);
         });
-        console.log(`I have successfully loaded: ${commands.length} commands!`);
     });
 });
