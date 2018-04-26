@@ -1,6 +1,6 @@
 exports.run = async function(bot, msg, args) {
   try {
-      let hex = bot.hex;
+      const hex = bot.hex;
       let command;
       if (bot.commands.has(args[0])) { 
           command = args[0]; 
