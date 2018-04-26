@@ -5,4 +5,4 @@ This handler is what I will be using from now for all my Discord.JS projects, as
 # How to make this handler function
 Simply go the `configurations/settings.js` file and configure the options to meet what you need,
 Add all the commands you desire following the format of the previous commands,
-Enjoy your fully fledged command handler created by me!
+Enjoy your fully fledged command handler created by me, enjoy!
