@@ -11,4 +11,5 @@ const settings = {
     "specifiedHex": "Insert your hex colour here! In OxOOOOOO Format."
   }
 };
+//Exporting my settings object as a module so I can append it to my client.
 module.exports = settings;
