@@ -1,4 +1,6 @@
-module.exports = msg => {
+module.exports =  {
+  eventName: "message",
+  eventFunc: (msg) => {
     let bot = msg.client;
     if (msg.author.bot) return;
     if (!msg.content.startsWith(bot.settings.prefix)) return;
@@ -20,4 +22,5 @@ module.exports = msg => {
       if (permission < convertedCommand.conf.permLevel) return;
       convertedCommand.run(bot, msg, args, permission);
     }
-  };
+  }
+};
