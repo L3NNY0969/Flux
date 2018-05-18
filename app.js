@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-const FileSystem = require("fs");
+const fileSystem = require("fs");
 
 bot.commands = new Discord.Collection();
 bot.aliases = new Discord.Collection();
@@ -9,7 +9,7 @@ require("./modules/essentialFunctions.js")(bot);
 require("./modules/essentialEmbeds.js")(bot);
 bot.login(bot.settings.token);
 
-FileSystem.readdir("./commands/", function(error, commands) {
+fileSystem.readdir("./commands/", function(error, commands) {
   if (error) return console.error(error.stack);
   console.log(`Going to load: ${commands.length} commands!`);
   commands.forEach(function(file) {
@@ -23,7 +23,7 @@ FileSystem.readdir("./commands/", function(error, commands) {
   });
 });
 
-FileSystem.readdir("./events/", function(error, events) {
+fileSystem.readdir("./events/", function(error, events) {
   if (error) return console.error(error.stack);
   console.log(`Going to load: ${events.length} events!`);
   events.forEach(function(file) {
