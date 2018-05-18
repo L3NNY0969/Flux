@@ -18,7 +18,7 @@ FileSystem.readdir("./commands/", function(error, commands) {
     bot.commands.set(commandModule.help.name, commandModule);
     console.log(`Command activated: ${commandModule.help.name}`);
     commandModule.conf.aliases.forEach(function(alias) {
-        bot.aliases.set(alias, commandModule.help.name);
+      bot.aliases.set(alias, commandModule.help.name);
     });
   });
 });
