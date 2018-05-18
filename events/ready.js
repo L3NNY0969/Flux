@@ -1,6 +1,3 @@
-module.exports = {
-  eventName: "ready",
-  eventFunc: function() {
-    console.log("Hexusbot initialized using Charlie's Visualise command handler.");
-  }
-}
+exports.run = function(bot) {
+  console.log("Visualize command handler activated, bot ready to use!");
+};
