@@ -1,4 +1,4 @@
-exports.run = function(msg) {
+exports.run = function(bot, msg) {
   let bot = msg.client;
   if (msg.author.bot) return;
   if (!msg.content.startsWith(bot.settings.prefix)) return;
