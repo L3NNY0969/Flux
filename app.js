@@ -31,6 +31,6 @@ FileSystem.readdir("./events/", function(error, events) {
     let eventModule = require(`./events/${file}`);
     let eventName = eventModule.split(".")[0];
     console.log(`Loaded Event: ${eventName}`);
-    bot.on(eventName, (...params) => eventModule.run(bot, ...params);
+    bot.on(eventName, (...params) => eventModule.run(bot, ...params));
   });
 });
