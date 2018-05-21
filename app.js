@@ -29,7 +29,7 @@ fileSystem.readdir("./events/", function(error, events) {
   events.forEach(function(file) {
     if (!file.endsWith(".js")) return;
     let eventModule = require(`./events/${file}`);
-    let eventName = eventModule.split(".")[0];
+    let eventName = eventModule.toString().split(".")[0];
     console.log(`Loaded Event: ${eventName}`);
     bot.on(eventName, (...params) => eventModule.run(bot, ...params));
   });
