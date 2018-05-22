@@ -1,5 +1,4 @@
 exports.run = function(bot, msg) {
-  let bot = msg.client;
   if (msg.author.bot) return;
   if (!msg.content.startsWith(bot.settings.prefix)) return;
   const command = msg.content.toLowerCase().split(" ")[0].slice(bot.settings.prefix.length);
