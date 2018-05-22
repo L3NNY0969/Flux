@@ -9,14 +9,14 @@ exports.run = function(bot, msg, args) {
       command = bot.commands.get(command);
       bot.embed(msg, bot.hex, "Command help:", `Command Name: \`${command.help.name}\` \nDescription: \`${command.help.description}\` \nUsage: \`${bot.settings.prefix}${command.help.usage}\` \nAliases: \`${command.conf.aliases.join(" | ") || "No aliases found."}\` \nPermission Level: \`${command.conf.permLevel}\``);
     } else {
-        bot.embed(msg, bot.hex, "Invalid command:", `I was unable to find a command by the name of: \`${args[0]}\``);
+      bot.embed(msg, bot.hex, "Invalid command:", `I was unable to find a command by the name of: \`${args[0]}\``);
     }
   }
 };
 
 exports.conf = {
   activated: true,
-  aliases: ['h', 'halp'],
+  aliases: [],
   permLevel: 0
 };
 

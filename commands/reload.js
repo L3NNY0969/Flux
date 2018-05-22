@@ -14,9 +14,9 @@ exports.run = async function(bot, msg, args) {
       } else {
         msg.channel.send("Preparing to reload specified command: :file_folder:").then(m => {
             bot.reload(command).then(() => {
-                m.edit(`:open_file_folder: Successfully reloaded \`${command}\``);
+                m.edit(`:white_check_mark: Successfully reloaded \`${command}\``);
               }).catch(e => {
-                m.edit(`:no_entry_sign: Command reload failed: ${command}\n\`\`\`${e.stack}\`\`\``);
+                m.edit(`:rotating_light: Command reload failed: ${command}\n\`\`\`${e.stack}\`\`\``);
               });
         });
       }
@@ -26,13 +26,13 @@ exports.run = async function(bot, msg, args) {
 };
 
 exports.conf = {
-    activated: true,
-    aliases: ['r'],
-    permLevel: 4
-  };
+  activated: true,
+  aliases: ['r'],
+  permLevel: 10
+};
   
-  exports.help = {
-    name: 'reload',
-    description: 'Reload a command file.',
-    usage: 'reload <commandname>'
-  };
+exports.help = {
+  name: 'reload',
+  description: 'Reload a command file from the command collection.',
+  usage: 'reload <commandname>'
+};
