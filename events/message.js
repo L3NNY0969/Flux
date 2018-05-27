@@ -5,7 +5,7 @@ exports.run = function(bot, msg) {
   const command = msg.content.toLowerCase().split(" ")[0].slice(bot.settings.prefix.length);
   const args = msg.content.split(" ").slice(1);
   const permission = bot.permission(msg);
-  
+  msg.author.permLevel = permission;
 
   let convertedCommand;
   if (bot.commands.has(command)) {
