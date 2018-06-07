@@ -3,7 +3,7 @@ const { RichEmbed } = require("discord.js");
 const Discord = require("discord.js");
 const embed = new RichEmbed()
 .setColor(15400990)
-.setDescription(`${bot.emojis.find(x => x.name === "loading")} Pong! Time - **${Date.now() - msg.createdTimestamp}ms** API Latency is **${Math.round(bot.ping)}ms**`)
+.setDescription(`Pong! Time - **${Date.now() - msg.createdTimestamp}ms** API Latency is **${Math.round(bot.ping)}ms**`)
 msg.channel.send(embed)
 }
 
