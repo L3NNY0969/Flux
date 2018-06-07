@@ -3,7 +3,7 @@ const settings = {
   "prefix" : "f.",
   "modRole" : null,
   "muteRole" : null,
-  "owners" : ["293159670040887297", "417807256437129216"]
+  "owners" : ["293159670040887297", "292690616285134850"]
 }
 
 module.exports = settings;
