@@ -1,9 +1,9 @@
 const settings = {
-  "token" : "TOKEN HERE",
-  "prefix" : "PREFIX HERE",
-  "modRole" : "MODROLE NAME",
-  "muteRole" : "MUTEROLE NAME",
-  "owners" : ["ID HERE", "ID HERE"]
+  "token" : process.env.TOKEN,
+  "prefix" : "f.",
+  "modRole" : null,
+  "muteRole" : null,
+  "owners" : ["293159670040887297", "417807256437129216"]
 }
 
 module.exports = settings;
